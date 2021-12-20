@@ -9,4 +9,6 @@ urlpatterns = [
     path('', views.index, name='index'),
 
     path('<int:pk>/', views.show, name='show'),
+
+    path('add/', views.add, name='add'),
 ]
