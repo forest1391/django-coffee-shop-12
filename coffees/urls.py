@@ -6,5 +6,7 @@ from . import views
 app_name = 'coffees'
 urlpatterns = [
     # ex: /coffees/
-    path('', views.index),
+    path('', views.index, name='index'),
+
+    path('<int:pk>/', views.show, name='show'),
 ]
